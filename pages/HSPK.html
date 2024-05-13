@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link " href="../pages/index.html">
+          <a class="nav-link " href="../index.html">
             <div
               class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -124,81 +124,226 @@
     <!-- TABEL -->
     <div class="table-responsive">
       <table>
-        <tr>
-          <th class="jenis-pekerjaan">Jenis Pekerjaan</th>
-          <th class="uraian" colspan="4">: Pemasangan Genteng Jawa (soka)</th>
-        
-        </tr>
-        <tr>
-          <td class="no">(1)</td>
-          <td class="gabung-kanankiri"></td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">(2)</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="volume">(3)</td>
-          <td class="satuan">(4)</td>
-        </tr>
-        <tr>
-          <td class="no">A.</td>
-          <td class="gabung-kanankiri">Pemasangan Genteng Jawa (soka)</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="gabung-kanankiri">Atap Pelana</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Panjang (p)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="panjang"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Lebar (l)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="lebar"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Sudut Atap (a)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="sudut"></td>
-          <td class="satuan">&deg;</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Overstek</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="overstek"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Luasan</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian">((p + 2 x overstek)m x (l + 2 x overstek)m) / (Cos a)</td>
-          <td class="meter">m<sup>2</sup></td>
-          <td class="volume"><span id="luasan"></span></td>
-          <td class="satuan"> m<sup>2</sup></td>
-        </tr>
+        <div style="display: grid; grid-template-columns: max-content 1fr;">
+          <div>
+            <h5>Jenis Pekerjaan</h5>
+            <h5>Satuan</h5>
+            <h5>Harga Satuan</h5>
+          </div>
+          <div>
+            <h5>: Pemasangan Genteng, Jawa (soka)</h5>
+            <h5>: m2</h5>
+            <h5>: Rp. 115.850,00</h5>
+          </div>
+          <tr>
+            <th class="no">No</th>
+            <th class="uraian-pekerjaan" colspan="3">Uraian Pekerjaan</th>
+            <th class="koefesian">Koefisien</th>
+            <th class="satuan">Satuan</th>
+            <th class="harga-satuan">Harga Satuan (RP)</th>
+            <th class="jumlah-harga">Jumlah Harga (RP)</th>
+
+          </tr>
+          <tr>
+            <td class="no">(1)</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">(2)</td>
+            <td class="koefesien">(3)</td>
+            <td class="satuan">(4)</td>
+            <td class="harga-satuan">(5)</td>
+            <td class="jumlah-harga">(6)=(3)x(5)</td>
+          </tr>
+          <tr>
+            <td class="no">A.</td>
+            <td class="gabung-kanankiri">Tenaga Kerja</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="no">1</td>
+            <td class="gabung-kanankiri">Pekerja</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien">0.15</td>
+            <td class="satuan">OH</td>
+            <td class="harga-satuan">RP.</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">2</td>
+            <td class="gabung-kanankiri">Tukang</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien">0.075</td>
+            <td class="satuan">OH</td>
+            <td class="harga-satuan">RP.</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">3</td>
+            <td class="gabung-kanankiri">Kepala Tukang</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien">0.008</td>
+            <td class="satuan">OH</td>
+            <td class="harga-satuan">RP.</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">4</td>
+            <td class="gabung-kanankiri">Mandor</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien">0.008</td>
+            <td class="satuan">OH</td>
+            <td class="harga-satuan">RP.</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Sub Total Upah</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">B.</td>
+            <td class="gabung-kanankiri">Bahan</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="no">1</td>
+            <td class="gabung-kanankiri">Genteng Soka</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien">25</td>
+            <td class="satuan">Buah</td>
+            <td class="harga-satuan">RP.</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">2</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien"></td>
+            <td class="satuan"></td>
+            <td class="harga-satuan"></td>
+            <td class="jumlah-harga"></td>
+          </tr>
+          <tr>
+            <td class="no">3</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien"></td>
+            <td class="satuan"></td>
+            <td class="harga-satuan"></td>
+            <td class="jumlah-harga"></td>
+          </tr>
+          <tr>
+            <td class="no">4</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien"></td>
+            <td class="satuan"></td>
+            <td class="harga-satuan"></td>
+            <td class="jumlah-harga"></td>
+          </tr>
+          <tr>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Sub Total Upah</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">C.</td>
+            <td class="gabung-kanankiri">Peralatan</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="no">1</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="koefesien"></td>
+            <td class="satuan"></td>
+            <td class="harga-satuan"></td>
+            <td class="jumlah-harga"></td>
+          </tr>
+          <tr>
+            <td class="no"></td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Sub Total Upah</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">-</td>
+          </tr>
+          <tr>
+            <td class="no">D.</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Jumlah Harga Tenaga Kerja, Bahan, Peralatan (A+B+C)</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no">E.</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Overhead + Provit (11% x D)</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no"></td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Harga Satuan Pekerja (D + E)</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
+          <tr>
+            <td class="no"></td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">Dibulatkan</td>
+            <td class="gabung-kanankiri"></td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="gabung-kanankiri">&nbsp;</td>
+            <td class="jumlah-harga">RP.</td>
+          </tr>
       </table>
     </div>
   </main>
