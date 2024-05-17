@@ -149,7 +149,51 @@
     <!-- End Navbar -->
     <!-- TABEL -->
     <div class="table-responsive">
-      
+      <table>
+        <tr>
+          <th class="no">No.</th>
+          <th class="uraian" colspan="3">Uraian Pekerjaan</th>
+          <th class="volume">Volume</th>
+          <th class="satuan">Satuan</th>
+          <th class="harga-satuan">Harga Satuan</th>
+          <th class="jumlah-harga">Jumlah Harga</th>
+        </tr>
+        <tr>
+          <td class="no">(1)</td>
+          <td class="gabung-kanankiri"></td>
+          <td class="gabung-kanankiri">&nbsp;</td>
+          <td class="gabung-kanankiri">(2)</td>
+          <td class="koefesien">(3)</td>
+          <td class="satuan">(4)</td>
+          <td class="harga-satuan">(5)</td>
+          <td class="jumlah-harga">(6)=(3)x(5)</td>
+        </tr>
+        <tr>
+          <td class="no">I.</td>
+          <td class="gabung-kanankiri">Pekerjaan Atap</td>
+          <td class="gabung-kanankiri" colspan="6">&nbsp;</td>
+        </tr>
+        <tr class="pemasangan">
+          <td class="no">1</td>
+          <td class="gabung-kanankiri">Pemasangan Genteng Jawa (soka)</td>
+          <td class="gabung-kanankiri">&nbsp;</td>
+          <td class="gabung-kanankiri"></td>
+          <td class="volume"><input type="number" id="volume1"></td>
+          <td class="satuan">m<sup>2</sup></td>
+          <td class="harga-satuan"><input type="number" id="harga1"></td>
+          <td class="jumlah-harga"> <span id="jumlah1"></span></td>
+        </tr>
+        <tr class="tenaga-kerja">
+          <td class="gabung-kanankiri"></td>
+          <td class="gabung-kanankiri"></td>
+          <td class="gabung-kanankiri">Sub Total Upah</td>
+          <td class="gabung-kanankiri"></td>
+          <td class="gabung-kanankiri">&nbsp;</td>
+          <td class="gabung-kanankiri">&nbsp;</td>
+          <td class="gabung-kanankiri">&nbsp;</td>
+          <td class="jumlah-harga" id="total-tenaga-kerja">0</span></td>
+        </tr>
+      </table>
     </div>
   </main>
   <div class="d-flex">
