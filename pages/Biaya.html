@@ -178,10 +178,10 @@
           <td class="gabung-kanankiri">Pemasangan Genteng Jawa (soka)</td>
           <td class="gabung-kanankiri">&nbsp;</td>
           <td class="gabung-kanankiri"></td>
-          <td class="volume"><input type="number" id="volume1"></td>
+          <td class="volume"><input type="number" id="volume1" oninput="calculateTotal()"></td>
           <td class="satuan">m<sup>2</sup></td>
-          <td class="harga-satuan"><input type="number" id="harga1"></td>
-          <td class="jumlah-harga"> <span id="jumlah1"></span></td>
+          <td class="harga-satuan"><input type="number" id="harga1" oninput="calculateTotal()"></td>
+          <td class="jumlah-harga"> <span id="jumlah1">Rp. 0</span></td>
         </tr>
         <tr class="tenaga-kerja">
           <td class="gabung-kanankiri"></td>
@@ -191,7 +191,7 @@
           <td class="gabung-kanankiri">&nbsp;</td>
           <td class="gabung-kanankiri">&nbsp;</td>
           <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="jumlah-harga" id="total-tenaga-kerja">0</span></td>
+          <td class="jumlah-harga" id="total-tenaga-kerja">Rp. 0</td>
         </tr>
       </table>
     </div>
@@ -209,8 +209,7 @@
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
   <!-- Custom JS -->
-  <script src="../assets/js/luasan.js"></script>
-
+  <script src="../assets/js/biaya.js"></script>
 
 </body>
 
