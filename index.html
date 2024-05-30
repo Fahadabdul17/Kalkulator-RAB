@@ -2,248 +2,314 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="./assets/img/bg.png">
-  <title>Perhitungan RAB</title>
-  <!-- Fonts and icons -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- CSS Files -->
-  <link id="pagestyle" href="./assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/volume.css">
+  <meta charset="utf-8">
+  <title>RAB - Kalkulator RAB</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="./assets/img/bg.png" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
-    id="sidenav-main">
-    <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-        aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="#" target="_blank">
-        <img src="./assets/img/bg.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold">WEB PERHITUNGAN RAB</span> </a> </div>
-    <hr class="horizontal dark mt-0">
-    <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="./pages/index.html">
-            <div
-              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>Perhitungan Volume Pekerjaan</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g id="office" transform="translate(153.000000, 2.000000)">
-                        <path class="color-background opacity-6"
-                          d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z">
-                        </path>
-                        <path class="color-background"
-                          d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <span class="nav-link-text ms-1">Perhitungan Volume</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="./pages/HSPK.html">
-            <div
-              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>HSPK Surabaya</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g transform="translate(304.000000, 151.000000)">
-                        <polygon class="color-background opacity-6"
-                          points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667">
-                        </polygon>
-                        <path class="color-background opacity-6"
-                          d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z">
-                        </path>
-                        <path class="color-background"
-                          d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <span class="nav-link-text ms-1">HSPK Surabaya</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="./pages/Biaya.html">
-            <div
-              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>Rencana Anggara Biaya</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g id="office" transform="translate(153.000000, 2.000000)">
-                        <path class="color-background opacity-6"
-                          d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z">
-                        </path>
-                        <path class="color-background"
-                          d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <span class="nav-link-text ms-1">Anggaran Biaya</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
-    <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
-      navbar-scroll="true">
-      <div class="container-fluid py-1 px-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Tables</li>
-          </ol>
-          <h6 class="font-weight-bolder mb-0">Uraian Perhitungan Volume Pekerjaan</h6>
-        </nav>
-        <ul class="navbar-nav  justify-content-end">
-          <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
-              <div class="sidenav-toggler-inner">
-                <i class="sidenav-toggler-line"></i>
-                <i class="sidenav-toggler-line"></i>
-                <i class="sidenav-toggler-line"></i>
-              </div>
-            </a>
-          </li>
-          <a class="dropdown-item border-radius-md" href="javascript:;">
-          </a>
-          </li>
-        </ul>
-        </li>
-        </ul>
-      </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- TABEL -->
-    <div class="table-responsive">
-      <table>
-        <tr>
-          <th class="no">No.</th>
-          <th class="uraian" colspan="4">Uraian Pekerjaan</th>
-          <th class="volume">Volume</th>
-          <th class="satuan">Satuan</th>
-        </tr>
-        <tr>
-          <td class="no">(1)</td>
-          <td class="gabung-kanankiri"></td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">(2)</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="volume">(3)</td>
-          <td class="satuan">(4)</td>
-        </tr>
-        <tr>
-          <td class="no">A.</td>
-          <td class="gabung-kanankiri">Pemasangan Genteng Jawa (soka)</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="gabung-kanankiri">Atap Pelana</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-          <td class="gabung-kanankiri">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Panjang (p)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="panjang"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Lebar (l)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="lebar"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Sudut Atap (a)</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="sudut"></td>
-          <td class="satuan">&deg;</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Overstek</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian"><input type="number" id="overstek"></td>
-          <td class="meter">m</td>
-          <td class="volume">&nbsp;</td>
-          <td class="satuan"></td>
-        </tr>
-        <tr>
-          <td class="no">&nbsp;</td>
-          <td class="uraian">Luasan</td>
-          <td class="sama-dengan">=</td>
-          <td class="uraian">((p + 2 x overstek)m x (l + 2 x overstek)m) / (Cos a)</td>
-          <td class="meter">m<sup>2</sup></td>
-          <td class="volume"><span id="luasan"></span></td>
-          <td class="satuan"> m<sup>2</sup></td>
-        </tr>
-      </table>
-    </div>
-  </main>
-  <div class="d-flex">
-    <div class=" active" data-class="bg-transparent" onclick="sidebarType(this)"></div>
-    <div class=data-class="bg-white" onclick="sidebarType(this)"></div>
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
   </div>
-  <!-- END TABEL -->
-  <!-- Core JS Files -->
-  <script src="./assets/js/core/popper.min.js"></script>
-  <script src="./assets/js/core/bootstrap.min.js"></script>
-  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
-  <!-- Custom JS -->
-  <script src="./assets/js/luasan.js"></script>
+  <!-- Spinner End -->
 
 
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-white sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+        <a href="index.html" class="navbar-brand">
+          <img class="img-fluid" src="./assets/img/logo.png" alt="Logo">
+        </a>
+        <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#" class="nav-item nav-link">Contact</a>
+          </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+
+  <!-- Carousel Start -->
+  <div class="container-fluid px-0 mb-5">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="./assets/img/BG .png" alt="Image">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                  <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA
+                      House</strong></p>
+                  <h1 class="display-1 text-dark mb-4 animated zoomIn">Organic & Quality Tea
+                    Production</h1>
+                  <a href="./pages/kasar.html" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore
+                    More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="./assets/img/BG .png" alt="Image">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                  <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA
+                      House</strong></p>
+                  <h1 class="display-1 text-dark mb-4 animated zoomIn">Organic & Quality Tea
+                    Production</h1>
+                  <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore
+                    More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+
+  <!-- Contact Start -->
+  <div id="about" class="container-xxl contact py-5">
+    <div class="container">
+      <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <p class="fs-5 fw-medium fst-italic text-primary">Contact Us</p>
+        <h1 class="display-6">If You Have Any Query, Please Contact Us</h1>
+      </div>
+      <div class="container" id="content">
+        <div class="question" onclick="toggleAnswer(0)">Apa Yang Dimaksud dengan Genteng?</div>
+        <div class="answer">
+          <p>Genteng adalah bahan bangunan yang umum digunakan untuk atap rumah atau bangunan lainnya, terbuat
+            dari tanah liat, beton, logam, atau plastik. Bentuknya yang datar dengan pinggiran melengkung
+            atau bergelombang dirancang untuk mencegah air hujan masuk ke dalam bangunan. Beberapa jenis
+            genteng yang sering digunakan termasuk genteng tanah liat, genteng beton, genteng metal, dan
+            genteng plastik, masing-masing dengan keunggulan dan kelemahannya sesuai kebutuhan konstruksi.
+
+            <p>Genteng tanah liat adalah yang paling umum karena keindahan estetika dan daya tahan terhadap
+              cuaca, seperti genteng Sokka. Genteng Sokka, terbuat dari tanah liat, memiliki pola bergelombang
+              unik yang estetis dan efektif dalam mencegah kebocoran. Bentuk bergelombangnya mengarahkan air
+              hujan agar tidak merembes ke atap, memberikan tampilan khas dan menarik pada bangunan. Selain
+              itu, genteng Sokka terkenal kuat dan tahan terhadap cuaca ekstrem seperti panas, hujan, dan
+              angin kencang, menjadikannya pilihan populer untuk atap rumah di Indonesia.</p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(1)">Atap Pelana</div>
+        <div class="answer">
+          <p>Atap pelana adalah salah satu bentuk atap yang paling umum digunakan, ditandai dengan dua sisi
+            miring yang bertemu di puncak membentuk garis lurus. Atap ini menyerupai bentuk segitiga jika
+            dilihat dari depan atau belakang. Genteng yang digunakan pada atap pelana biasanya dipasang
+            dalam pola berlapis, mengikuti kemiringan atap untuk memastikan air hujan mengalir dengan baik
+            dan mencegah kebocoran.</p>
+
+          <p>Genteng tanah liat, seperti genteng Sokka, sangat cocok untuk atap pelana karena desain
+            bergelombangnya membantu mengarahkan air hujan dengan efisien dan memberikan daya tahan terhadap
+            cuaca. Atap pelana dengan genteng tanah liat tidak hanya fungsional tetapi juga menawarkan
+            estetika tradisional yang menarik.</p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(2)">Tentang Aplikasi</div>
+        <div class="answer">
+          <p>Meskipun genteng Sokka memiliki banyak keunggulan, seperti keindahan desain dan daya tahan yang
+            baik, penting untuk memperhatikan proses pemasangannya dengan teliti untuk memastikan bahwa
+            genteng tersebut dipasang dengan benar dan kuat agar dapat memberikan perlindungan yang optimal
+            terhadap bangunan dari pengaruh cuaca dan faktor-faktor lainnya.</p>
+
+          <p>Faktor lainnya yang perlu diperhatikan selain pemasangan adalah perhitungannya. Maka dari itu,
+            kami memudahkan orang-orang yang kesulitan dalam melakukan perhitungan kebutuhan genteng dan
+            kisaran biaya yang dikeluarkan jika mereka menggunakan jenis genteng tanah liat sokka ini dan
+            bentuk atap yang akan diterapkan nanti berbentuk pelana. Aplikasi atau Web yang kami
+            bangun/ciptakan ini cukup memudahkan orang awam yang tidak mengerti proses perhitungannya.</p>
+
+          <ol>
+            <li> Input Fleksibel : Memungkinkan pengguna untuk memasukkan data geometris bangunan, seperti
+              panjang dan lebar bangunan.</li>
+
+            <li>Perhitungan Otomatis: Melakukan perhitungan kebutuhan genteng dan harga genteng permeter
+              persegi secara otomatis berdasarkan data yang dimasukkan pengguna.</li>
+
+
+            <li>Vitur dalam aplikasi :
+              Beberapa vitur dalam aplikasi yang dapat digunakan yaitu perhitungan jumlah genteng dan kisaran
+              biaya genteng, Perhitungan volume, dan Rencana Anggaran Biaya, dimana dalam proses perhitungan
+              terdapat beberapa pilihan untuk memudahkan perhitung kebutuhan genteng. Seperti panjang dan
+              lebar bidang, isi genteng, harga, dan pilihan overstek.</li>
+          </ol>
+          <p> Visualisasi Hasil: Menyajikan hasil perhitungan dalam bentuk angka untuk memudahkan pemahaman.</p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(3)">Kata Pengatar</div>
+        <div class="answer">
+          <p>Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa, karena atas rahmat dan hidayah-Nya,
+            kami dapat menyelesaikan Tugas Akhir untuk mata kuliah Aplikasi Komputer yang berjudul
+            "Pembuatan Web Perhitungan Harga Material Kebutuhan Atap Pelana dengan Jenis Genteng Tanah
+            Liat". Tugas Akhir ini merupakan salah satu syarat untuk menyelesaikan program pendidikan
+            Diploma 4 Teknik Sipil di Universitas Negeri Surabaya, angkatan 2022.</p>
+
+          <p>Pembuatan web ini bertujuan untuk mempermudah proses perhitungan harga material kebutuhan atap
+            pelana dengan jenis genteng tanah liat. Dengan adanya web ini, diharapkan pengguna dapat
+            melakukan perhitungan secara cepat, akurat, dan efisien, sehingga dapat membantu dalam
+            pengambilan keputusan dalam proyek konstruksi atap.</p>
+
+          <p>Dalam proses penyusunan Tugas Akhir ini, kami mendapatkan banyak bantuan dan dukungan dari
+            berbagai pihak. Oleh karena itu, pada kesempatan ini kami ingin mengucapkan terima kasih yang
+            sebesar-besarnya kepada:</p>
+
+          <ol>
+            <li>Bapak Puguh Novi Prasetyono, S.Pd., M.T., yang telah memberikan bimbingan, arahan, dan
+              motivasi kepada kami dalam penyusunan Tugas Akhir ini.</li>
+            <li>Keluarga dan Teman-teman, yang selalu memberikan dukungan moral dan material kepada kami.
+            </li>
+            <li>Seluruh pihak yang tidak dapat kami sebutkan satu per satu, yang telah membantu kami baik
+              secara langsung maupun tidak langsung dalam menyelesaikan Tugas Akhir ini.</li>
+          </ol>
+
+          <p>Kami menyadari bahwa Tugas Akhir ini masih jauh dari sempurna, baik dari segi isi maupun
+            penyajiannya. Oleh karena itu, kami sangat mengharapkan kritik dan saran yang membangun demi
+            perbaikan di masa mendatang.</p>
+
+          <p>Akhir kata, semoga Tugas Akhir ini dapat bermanfaat bagi semua pihak yang berkepentingan,
+            khususnya dalam bidang Teknik Sipil dan Aplikasi Komputer.</p>
+
+          <p>Surabaya, Mei 2024</p>
+
+          <p>Mahasiswa D4 Teknik Sipil<br>
+            Angkatan 2022<br>
+            Universitas Negeri Surabaya</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-primary mb-4">Our Office</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York,
+            USA</p>
+          <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+          <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+          <div class="d-flex pt-3">
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-primary mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-primary mb-4">Business Hours</h4>
+          <p class="mb-1">Monday - Friday</p>
+          <h6 class="text-light">09:00 am - 07:00 pm</h6>
+          <p class="mb-1">Saturday</p>
+          <h6 class="text-light">09:00 am - 12:00 pm</h6>
+          <p class="mb-1">Sunday</p>
+          <h6 class="text-light">Closed</h6>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-primary mb-4">Newsletter</h4>
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <div class="position-relative w-100">
+            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="fw-medium" href="#">Your Site Name</a>, All Right Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed By <a class="fw-medium" href="https://htmlcodex.com">HTML Codex</a> Distributed By
+          <a class="fw-medium" href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/easing/easing.min.js"></script>
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/test.js"></script>
 </body>
 
 </html>
