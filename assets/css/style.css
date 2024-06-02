@@ -94,7 +94,8 @@
 
 .text-justify {
     text-align: justify;
-    margin-left: 20px; /* Sesuaikan nilai margin sesuai kebutuhan */
+    margin-left: 20px;
+    /* Sesuaikan nilai margin sesuai kebutuhan */
 }
 
 
@@ -142,7 +143,7 @@
         height: 100px;
     }
 
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -181,17 +182,21 @@
     cursor: pointer;
     position: relative;
 }
+
 .question::after {
-    content: '\25BC'; /* Unicode karakter untuk panah bawah */
+    content: '\25BC';
+    /* Unicode karakter untuk panah bawah */
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s;
 }
+
 .question.open::after {
     transform: translateY(-50%) rotate(180deg);
 }
+
 .answer {
     display: none;
     padding: 10px;
@@ -200,6 +205,7 @@
     background-color: #e9ecef;
     border-radius: 4px;
 }
+
 .answer p {
     margin: 0;
 }
@@ -235,7 +241,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -245,7 +251,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(1245,222,179), rgba(245,222,179)), url(../img/Bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(1245, 222, 179), rgba(245, 222, 179)), url(../img/Bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -302,11 +308,11 @@
 /*** Footer ***/
 .footer {
     color: #F5F5DC;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.footer .row > div {
+.footer .row>div {
     margin-bottom: 20px;
 }
 
@@ -319,7 +325,7 @@
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
-    
+
 }
 
 .footer .btn.btn-link::before {
@@ -339,6 +345,63 @@
 
 .footer p {
     margin: 0 0 10px;
+}
+
+.footer .col-lg-3,
+.footer .col-md-6 {
+    text-align: left;
+}
+
+.footer h4 {
+    text-align: left;
+    color: #FFC107;
+    /* Adjust this color as needed */
+}
+
+.footer p,
+.footer a {
+    text-align: left;
+    color: #FFFFFF;
+    /* Adjust this color as needed */
+}
+
+.footer .fa {
+    margin-right: 10px;
+}
+
+.footer .btn-square {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.footer .social-buttons {
+    display: flex;
+    justify-content: left;
+    padding-top: 15px;
+}
+
+.text-bg-shadow {
+    background: rgba(0, 0, 0, 0.5);
+    /* Latar belakang semi-transparan hitam */
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Bayangan teks */
+}
+
+.text-shadow-light-gray {
+    text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.7);
+    /* Bayangan abu-abu terang */
+}
+
+.text-shadow-white {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+    /* Bayangan putih */
 }
 
 .copyright {
