@@ -83,6 +83,20 @@
     font-weight: normal;
 }
 
+/*** Contact ***/
+.contact .btn-square {
+    width: 100px;
+    height: 100px;
+    border: 20px solid var(--light);
+    background: var(--primary);
+    border-radius: 50px;
+}
+
+.text-justify {
+    text-align: justify;
+    margin-left: 20px; /* Sesuaikan nilai margin sesuai kebutuhan */
+}
+
 
 /*** Navbar ***/
 .sticky-top {
@@ -288,17 +302,24 @@
 /*** Footer ***/
 .footer {
     color: #F5F5DC;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer .row > div {
+    margin-bottom: 20px;
 }
 
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
-    padding: 0;
+    padding: 5px 0;
     text-align: left;
     color: #F5F5DC;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    
 }
 
 .footer .btn.btn-link::before {
@@ -314,6 +335,10 @@
     color: var(--light);
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+.footer p {
+    margin: 0 0 10px;
 }
 
 .copyright {
